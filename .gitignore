@@ -1,0 +1,60 @@
+# =============================================================================
+#  Galgame 存档守护 —— .gitignore
+# =============================================================================
+
+# --- 开发环境与构建产物（绝对不要提交） ---
+.venv/
+venv/
+env/
+build/
+dist/
+dist_dbg/
+build_dbg/
+*.spec
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# --- 打包产物 ---
+*.zip
+*.7z
+GalgameSaveGuard-v*.zip
+
+# --- 本工具的运行时数据 ---
+config.json
+galguard.root.json
+galguard.pointer.json
+backups/
+logs/
+cache/
+temp/
+exports/
+data/
+rules/detect_rules.json
+rules/detect_rules.v*.bak.json
+*.log
+*.db
+*.db-wal
+*.db-shm
+
+# --- 自检 / 调试时产生的临时目录 ---
+_selftest_run/
+_realtest/
+_wtest/
+_pkg/
+_ziptest/
+_exetest/
+_dbltest/
+_pwtest/
+_finaltest/
+_scan_leak.py
+_patch_*.py
+
+# --- 编辑器 / 系统 ---
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+desktop.ini
+.DS_Store
