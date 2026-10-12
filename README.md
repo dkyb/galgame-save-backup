@@ -1,4 +1,6 @@
-# Galgame 存档守护（Galgame Save Guard）
+# Galgame 存档备份（Galgame Save Guard）
+
+由ai写出来的galgame存档备份工具，是我有备份存档的需求产生的造物，能自动检测指定路径的gal存档，精度存疑，也可也手动指定gal存档路径
 
 > 一个**纯本地**的 Galgame / 视觉小说存档扫描与快照备份工具。
 > 只备份你自己的存档，不绕过 DRM、不修改游戏文件、**不联网、不上传任何数据**。
