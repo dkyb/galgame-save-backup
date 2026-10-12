@@ -1,0 +1,20 @@
+# 统一按 LF 存进仓库，检出时由各平台决定（Windows 上仍可用 CRLF）
+* text=auto eol=lf
+
+# PowerShell 脚本带 UTF-8 BOM（Windows PowerShell 5.1 需要 BOM 才能正确识别中文），
+# 这里显式标记为文本并保留 BOM；git 不会剥离 BOM。
+*.ps1  text eol=crlf
+*.bat  text eol=crlf
+*.cmd  text eol=crlf
+
+# 这些本来就是二进制，别做行尾转换
+*.png  binary
+*.jpg  binary
+*.ico  binary
+*.zip  binary
+*.exe  binary
+*.dll  binary
+*.db   binary
+
+# 让 GitHub 语言统计更准确
+*.md   linguist-documentation
