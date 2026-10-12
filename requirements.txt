@@ -1,0 +1,10 @@
+# Galgame 存档守护 —— 运行依赖
+# GUI 使用 Python 标准库 tkinter（Windows 官方安装包自带，无需 pip 安装，也不写任何 AppData 配置）
+# 其余仅 3 个第三方包，均不会向 AppData / 注册表 / 启动文件夹写入内容。
+
+watchdog>=3.0.0      # 文件系统监控（Windows 下基于 ReadDirectoryChangesW，纯只读）
+pystray>=0.19.5      # 系统托盘图标（仅程序运行期间存在，退出即销毁）
+Pillow>=10.0.0       # pystray 需要的内存内图标绘制（不落盘）
+
+# 打包（可选，只在需要生成 exe 时安装）
+# pyinstaller>=6.0.0
