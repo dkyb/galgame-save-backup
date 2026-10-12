@@ -22,6 +22,8 @@ __pycache__/
 GalgameSaveGuard-v*.zip
 
 # --- 本工具的运行时数据 ---
+# 正常情况下这些都在用户自己选的「总数据根目录」里（项目目录之外），
+# 但万一有人把数据根目录选成了项目目录，也不能把它们提交上来：
 config.json
 galguard.root.json
 galguard.pointer.json
